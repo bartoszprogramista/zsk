@@ -27,10 +27,10 @@ console.log(duzaMale);
 
 //użytkownik wpisuje z klawiatury swoje imie. zamień pierwszy znak na dużą litere a pozostałe na małe. wyświetl wszystko w nagłówku 2 stopnia w kolorze niebieskim
 
-/*
+
 var zadanie = prompt("Podaj imię");
 document.getElementById("naglowek");
 naglowek.textContent = zadanie.charAt(0).toUpperCase() + zadanie.slice(1).toLowerCase();
-*/
+
 // substr(odKtoregoZnaku,ileZnakow);
 console.log(text.substr(1,text.length-2)); //bez 1 i ostatniego znaku

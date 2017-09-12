@@ -1,3 +1,4 @@
+/*
 // tworzenie tablicy za pomocą literału tablicy
 var kolory = ['biały', 'zielony', 'czerwony'];
 var elKolor = document.getElementById('kolor');
@@ -6,7 +7,7 @@ var samochody = new Array('BMW', 'Audi', 'Ferrari');
 console.log(samochody[samochody.length-1]);
 /*var zadanie = prompt("autko");
 samochody[0]=zadanie;
-console.log(samochody);*/
+console.log(samochody);
 
 //tablice wielowymiarowe
 var tab = new Array(
@@ -41,5 +42,40 @@ return (a-b);
 });
 console.log(sortujCyfryPrawidlowo);
 
+*/
 
 // zad dom - utwórz formularz z loginem i hasłem zapisz dane w tablicy. zapisz wynik w nagłówku drugiego stopnia. użytkownik podaje również kolor w jakim ma być wszystko wyświetlone
+
+function funkcja()
+{
+    var kolor=prompt("jaki kolor ??");
+    var login = document.form.login.value;
+    var haslo = document.form.haslo.value;
+    var tablica = [login, haslo];
+    document.write("<h2><font color="+kolor+">"+tablica+"</font></h2>");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
