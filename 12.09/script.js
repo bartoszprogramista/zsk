@@ -23,22 +23,33 @@ console.log(poleProstokata);*/
 function funkcja()
 {
     if(document.getElementById("1").checked)
-        {
-    var promien = document.form.promien.value;
-    var pole = promien * promien * Math.PI;
-    var objetosc = 2 * promien * Math.PI;
-    var wynik = document.getElementById("wynik");
-    wynik.textContent = "pole = "+ pole+ " objetosc = "+ objetosc;
-        }
+    {
+        kolo();
+    }
     else if(document.getElementById("2").checked)
     {
-        console.log("no elo");
-        var promien =document.form.promiens.value;
-        var wysokosc = document.form.wysokoscs.value;
-        var costam = wysokosc * promien;
-        document.getElementById("wynik");
-        wynik.textContent = "stozek : "+costam;
+        stozek();
     }
     else
         document.write("gówno");
-}
+};
+
+function kolo()
+{
+
+    var promien = document.form.promien.value;
+    var pole = parseFloat(promien * promien * Math.PI).toFixed(2);
+    var objetosc = parseFloat(2 * promien * Math.PI).toFixed(2);
+    var wynik = document.getElementById("wynik");
+    wynik.textContent = "pole = "+ pole+ " objetosc = "+ objetosc;
+};
+
+function stozek()
+{
+    console.log("no elo");
+    var promien =document.form.promiens.value;
+    var wysokosc = document.form.wysokoscs.value;
+    var costam = parseFloat((1/3) * Math.PI * promien*promien * wysokosc).toFixed(2);
+    var wynik = document.getElementById("wynik");
+    wynik.textContent = "stozek : "+costam;
+};
