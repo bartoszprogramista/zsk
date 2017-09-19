@@ -96,9 +96,6 @@ elPrzycisk.onclick = function(){
 */
 
 
-//ZAD DOM
-//uzytkownik podaje z klawiatury login i haslo  w formularzu, jesli login to filip, a hasło to Okoń@123 to na ekranie wyslwietli w kolorze czerwonym poprawne hasło, jeśli hasło będzie błędne to w kolorze zielonym. Uzytkownik ma 3 próby na 3.
-
 // FOREACH ********************************************************
 
 
@@ -129,6 +126,7 @@ tab.forEach(xddd);
 */
 
 
+/*
 var elPI = document.getElementById('pi');
 var elNic  = document.getElementById('nic');
 var elPrzycisk =document.getElementById('przycisk');
@@ -139,18 +137,35 @@ elPrzycisk.onclick = function (){
         elWynik.innerHTML = Math.PI;
     }
     else if(elNic.checked)
-        elNic.innerHTML = 'nic';
+        elWynik.innerHTML = 'nic';
     else
         elWynik.innerHTML= 'nic nie wybrales';
 }
 
 
+*/
 
 
 
 
+//ZAD DOM
+//uzytkownik podaje z klawiatury login i haslo  w formularzu, jesli login to filip, a hasło to Okoń@123 to na ekranie wyslwietli w kolorze czerwonym poprawne hasło, jeśli hasło będzie błędne to w kolorze zielonym. Uzytkownik ma 3 próby na 3.
+
+var login = document.getElementById('login');
+var haslo = document.getElementById('haslo');
+var elPrzycisk2 = document.getElementById('przycisk2');
 
 
+elPrzycisk2.onclick = function ()
+{
+var i = 0;
+login = login.value;
+haslo = haslo.value;
+console.log(login);
+console.log(haslo);
+
+
+}
 
 
 
