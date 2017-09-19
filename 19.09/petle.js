@@ -151,25 +151,51 @@ elPrzycisk.onclick = function (){
 //ZAD DOM
 //uzytkownik podaje z klawiatury login i haslo  w formularzu, jesli login to filip, a hasło to Okoń@123 to na ekranie wyslwietli w kolorze czerwonym poprawne hasło, jeśli hasło będzie błędne to w kolorze zielonym. Uzytkownik ma 3 próby na 3.
 
-var login = document.getElementById('login');
-var haslo = document.getElementById('haslo');
-var elPrzycisk2 = document.getElementById('przycisk2');
+var elRezultat = document.getElementById('rezultat');
+var elPrzycisk =document.getElementById('przycisk');
 
-
-elPrzycisk2.onclick = function ()
+function funkcja()
 {
-var i = 0;
-login = login.value;
-haslo = haslo.value;
-console.log(login);
-console.log(haslo);
+    var a = document.form.login.value;
+    var b = document.form.haslo.value;
 
+    weryfikacja(a,b);
 
 }
+var i= 1;
+function weryfikacja (login,haslo)
+{
 
+    if(i==3)
+        {
+            alert('brak mozliwosci dalszego logowania');
 
+        }
+        if(login =='filip' && haslo == 'Okoń@123')
+            {
+                elRezultat.innerHTML = '<font color="red">'+ haslo + '</font>';
 
+            }
+         else
+            {
 
+                petla(haslo);
+
+            }
+}
+
+function petla(haslo)
+{
+    for(; i <=3;i++)
+        {
+            elRezultat.innerHTML = '<font color="green">'+ haslo + '</font>';
+            alert(i + 'proba nieprawidlowa');
+            console.log(i);
+            i++;
+            return i;
+            console.log(i);
+        }
+}
 
 
 

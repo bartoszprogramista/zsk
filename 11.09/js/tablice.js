@@ -50,7 +50,9 @@ function funkcja()
 {
     var kolor=prompt("jaki kolor ??");
     var login = document.form.login.value;
+    console.log(login);
     var haslo = document.form.haslo.value;
+    console.log(haslo);
     var tablica = [login, haslo];
     document.write("<h2><font color="+kolor+">"+tablica+"</font></h2>");
 }
