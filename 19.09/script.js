@@ -66,6 +66,47 @@ document.write(j);
 console.log(typeof(j));
 
 
+//losowanie
+//losuj z przedzialu 0,10
+
+var l = Math.floor(Math.random()*11);
+console.log(l);
+
+//losuj liczbe z przedzialu od 90 do 100
+
+var l = Math.floor(Math.random()*11 + 90);
+console.log(l);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
