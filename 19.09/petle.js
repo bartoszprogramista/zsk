@@ -100,7 +100,7 @@ elPrzycisk.onclick = function(){
 
 
 
-var tab = ['Anna', 'Jaca', 'Janusz', 'Adrian'];
+var tab = ['Małysz', 'Jaca', 'Daniel', 'Gosia'];
 /*
 for(var i= 0; i<tab.length; i++)
     {
