@@ -153,20 +153,14 @@ elPrzycisk.onclick = function (){
 
 var elRezultat = document.getElementById('rezultat');
 var elPrzycisk =document.getElementById('przycisk');
-
+var i= 1;
 function funkcja()
 {
-    var a = document.form.login.value;
-    var b = document.form.haslo.value;
+    var login = document.form.login.value;
+    var haslo = document.form.haslo.value;
 
-    weryfikacja(a,b);
 
-}
-var i= 1;
-function weryfikacja (login,haslo)
-{
-
-    if(i==3)
+        if(i==3)
         {
             alert('brak mozliwosci dalszego logowania');
 
@@ -179,24 +173,18 @@ function weryfikacja (login,haslo)
          else
             {
 
-                petla(haslo);
+            for(; i <=3;i++)
+                {
+                    elRezultat.innerHTML = '<font color="green">'+ haslo + '</font>';
+                    alert(i + 'proba nieprawidlowa');
+                    console.log(i);
+                    i++;
+                    return i;
+                    console.log(i);
+                }
 
             }
 }
-
-function petla(haslo)
-{
-    for(; i <=3;i++)
-        {
-            elRezultat.innerHTML = '<font color="green">'+ haslo + '</font>';
-            alert(i + 'proba nieprawidlowa');
-            console.log(i);
-            i++;
-            return i;
-            console.log(i);
-        }
-}
-
 
 
 
