@@ -47,7 +47,6 @@ function mail(){
     }else{
         elEmail2.disabled= true;
         elKomunikat.textContent = '';
-        elPass1.focus();
     }
 }
 function blokuj(){
@@ -56,25 +55,17 @@ function blokuj(){
     this.disabled = true;
 
 }
-
 function haslo(){
     if(elPass1.value != elPass2.value){
-        elKomunikat.textContent = 'hasla sa rozne są różne';
-        elPass1.focus();
-        elPass1.value = '';
-        this.value = '';
-        this.disabled = true;
+        elKomunikat.innerHTML = 'hasla sa rozne';
+
+
     }else{
-        elPass2.disabled= true;
-        elKomunikat.textContent = '';
+        elKomunikat.innerHTML = 'hasla takie same';
     }
 }
-function blokuj2(){
-    elPass2.disabled = false;
-    elPass2.focus();
-    this.disabled = true;
 
-}
+
 elImie.addEventListener('blur',sprawdz);
 elNazwisko.addEventListener('blur',sprawdz);
 elLogin.addEventListener('blur',sprawdz);
@@ -82,7 +73,6 @@ elLogin.addEventListener('blur',sprawdz);
 elEmail1.addEventListener('blur',blokuj);
 elEmail2.addEventListener('blur',mail);
 
-elPass1.addEventListener('blur',blokuj2);
 elPass2.addEventListener('blur',haslo);
 
 
