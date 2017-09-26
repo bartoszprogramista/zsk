@@ -10,6 +10,11 @@ var elDzielenie = document.getElementById('dzielenie');
 
 var elWynik = document.getElementById('wynik');
 
+var elPodstawa = document.getElementById('podstawa');
+var elWykladnik = document.getElementById('wykladnik');
+var elPoteznyPrzycisk = document.getElementById('potega');
+var elWynikPotega = document.getElementById('wpotega');
+
 
 elDodawanie.onclick = function(){
     elPierwszy = parseFloat(elPierwszy.value);
@@ -96,6 +101,27 @@ elDzielenie.onclick = function(){
     }
 }
 
+
+elPoteznyPrzycisk.onclick = function(){
+    elPodstawa = parseFloat(elPodstawa.value);
+    elWykladnik = parseFloat(elWykladnik.value);
+    console.log(elPodstawa);
+    console.log(elWykladnik);
+
+    if(isNaN(elPodstawa) || isNaN(elWykladnik)){
+        elWynikPotega.innerHTML = 'prosze wprowadzic cokolwiek';
+
+    }
+    else if(elWykladnik < 0){
+
+        elWynikPotega.innerHTML = 'wykladnik potegi musi byc dodatni';
+    }
+    else{
+        var wynik = Math.pow(elPodstawa,elWykladnik);
+        elWynikPotega.innerHTML = wynik;
+
+    }
+}
 
 
 

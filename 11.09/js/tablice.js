@@ -1,11 +1,11 @@
-/*
+
 // tworzenie tablicy za pomocą literału tablicy
 var kolory = ['biały', 'zielony', 'czerwony'];
 var elKolor = document.getElementById('kolor');
-elKolor.textContent = kolory [0];
+elKolor.textContent = kolory[0];
 var samochody = new Array('BMW', 'Audi', 'Ferrari');
 console.log(samochody[samochody.length-1]);
-/*var zadanie = prompt("autko");
+var zadanie = prompt("autko");
 samochody[0]=zadanie;
 console.log(samochody);
 
@@ -42,10 +42,11 @@ return (a-b);
 });
 console.log(sortujCyfryPrawidlowo);
 
-*/
+
 
 // zad dom - utwórz formularz z loginem i hasłem zapisz dane w tablicy. zapisz wynik w nagłówku drugiego stopnia. użytkownik podaje również kolor w jakim ma być wszystko wyświetlone
 
+/*
 function funkcja()
 {
     var kolor=prompt("jaki kolor ??");
@@ -55,7 +56,8 @@ function funkcja()
     console.log(haslo);
     var tablica = [login, haslo];
     document.write("<h2><font color="+kolor+">"+tablica+"</font></h2>");
-}
+}*/
+
 
 
 

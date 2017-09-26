@@ -57,11 +57,13 @@ elPrzycisk.onclick = function(){
 var elPrzycisk = document.getElementById('przycisk');
 var elTvZmien = document.getElementsByName('tv');
 
+/*
 function zmien(element, index)
 {
-    elTvZmien[index]xddddddddddddddddddddddd
+    elTvZmien[index]xddddddddddddddddddddddd;
 
 }
+*/
 
 
 

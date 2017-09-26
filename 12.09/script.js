@@ -20,6 +20,7 @@ console.log(poleProstokata);*/
 //napisać program, który oblicza obwód, pole koła oraz objętość stożka. dane uzytkownik podaje z klawy, wykorzystaj obiekt math. uzytkownik wybiera za pomocą pola radio button co chce obliczyc
 
 
+
 function funkcja()
 {
     if(document.getElementById("1").checked)
@@ -53,3 +54,4 @@ function stozek()
     var wynik = document.getElementById("wynik");
     wynik.textContent = "stozek : "+costam;
 };
+

@@ -11,11 +11,11 @@ for( var i = 0; i<10; i++)
 
 //losuj 100 liczb z przedzialu 50,200 *********************************
 
-/*for(var i=0; i<100; i++)
+for(var i=0; i<100; i++)
     {
         document.write(Math.floor(Math.random()*151+ 50) +"<br/>");
 
-    }*/
+    }
 
 // wyswietlic 1,10 ; 1-9 przecinek 10 kropka ***************************************
 for(var i = 1; i<=10; i++)
@@ -151,6 +151,7 @@ elPrzycisk.onclick = function (){
 //ZAD DOM
 //uzytkownik podaje z klawiatury login i haslo  w formularzu, jesli login to filip, a hasło to Okoń@123 to na ekranie wyslwietli w kolorze czerwonym poprawne hasło, jeśli hasło będzie błędne to w kolorze zielonym. Uzytkownik ma 3 próby na 3.
 
+/*
 var elRezultat = document.getElementById('rezultat');
 var elPrzycisk =document.getElementById('przycisk');
 var i= 1;
@@ -186,6 +187,7 @@ function funkcja()
             }
 }
 
+*/
 
 
 
