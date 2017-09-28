@@ -73,11 +73,41 @@ elPrzycisk.onclick = function(){
     elListTv.forEach
 }
 
+//cd. z 27.09
+
+var poczatekElement = document.getElementById('s2');
+var poprzedniElement= poczatekElement.previousElementSibling;
+/*var poprzedniElement= poczatekElement.previousSibling; nie działa xd w chujj*/
+var nastepnyElement = poczatekElement.nextElementSibling;
+
+poczatekElement.className = 'niebieski';
+poprzedniElement.className = 'niebieski';
+nastepnyElement.className = 'niebieski';
 
 
+//firstChild, LastChild
+
+var lista = document.getElementsByTagName('ul')[1];
+console.log(lista);
+
+var pierwszy = lista.firstElementChild;
+var ostatni = lista.lastElementChild;
+
+pierwszy.setAttribute('class','grey');
+ostatni.setAttribute('class','grey');
+
+//zamień pierwszy element input na button i przypisz wartosć wyślij
+
+var text = document.getElementsByTagName('input')[0];
+console.log(text);
+
+text.setAttribute('type','button');
+text.setAttribute('value','Wyślij'); //lub text.value = 'Wyślij';
 
 
-
+//tekst www łączy ze stroną szkoły zsk
+var link = document.getElementById('link');
+link.setAttribute('href', 'http://www.zsk.poznan.pl/');
 
 
 
