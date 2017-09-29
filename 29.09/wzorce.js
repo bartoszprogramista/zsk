@@ -37,12 +37,42 @@ var text = 'testtest';
 //var regEx = /test/; //true
 //var regEx = /(test)/; //true
 //var regEx = /(test){1}/; //true
-var regEx = /(test){2}/; //false, jezeli wpiszemy testtest true
+//var regEx = /(test){2}/; //false, jezeli wpiszemy testtest true
+
+//var sprawdz = regEx.test(text);
+//console.log(sprawdz);
+
 
 // https://regex101.com/ strona z tym gównem
 //https://regex101.com/r/w08oA7/1  -- wzorzec kodu pocztowego
 
 // zad dom. użytkownik podaje z klawy kod pocztowy i nazwę miasta. Sprawdź czy kod jest prawidłowy, jeśli tak to na ekranie w bloku wyswietl: Kod pocztowy:... , Miasto:..... Formularz
+function sprawdz(){
+    var elKod = document.getElementById('kod').value;
+    var elMiasto = document.getElementById('miasto').value;
+
+    var wzorzecKod = /^\d{2}-\d{3}$/;
+    var wzorzecMiasto = /[A-z]/i;
+
+    console.log('f dziala');
+
+    if(wzorzecKod.test(elKod) && wzorzecMiasto.test(elMiasto)){
+        elWynik.innerHTML = 'Kod pocztowy: '+ elKod + ' <br/> Miasto: '+ elMiasto;
+
+    }else
+        alert('nieprawidlowe dane');
+
+
+
+}
+
+
+var elPrzycisk = document.getElementById('przycisk');
+var elWynik = document.getElementById('wynik');
+
+
+
+elPrzycisk.addEventListener('click',sprawdz);
 
 
 
@@ -72,9 +102,3 @@ var regEx = /(test){2}/; //false, jezeli wpiszemy testtest true
 
 
 
-
-
-
-
-var sprawdz = regEx.test(text);
-console.log(sprawdz);
