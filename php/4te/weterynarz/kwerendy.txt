@@ -1,0 +1,4 @@
+zapytanie 1: SELECT `imie`, `telefon`, `szczepienie`,`opis` from zwierzeta;
+zapytanie 2: SELECT zwierzeta.id, zwierzeta.imie, zwierzeta.wlasciciel from zwierzeta WHERE zwierzeta.rodzaj = 1;
+zapytanie 3: SELECT zwierzeta.imie, uslugi.nazwa from zwierzeta inner join uslugi ON zwierzeta.usluga_id = uslugi.id;
+zapytanie 4: SELECT avg(uslugi.cena) FROM uslugi;
