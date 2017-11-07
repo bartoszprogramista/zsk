@@ -208,7 +208,7 @@ console.log(rower1);
 Rower.prototype.kola = 2;
 Rower.prototype.wypisz = function(){
     for(var i in this){
-        if(i == 'nazwa' || i =='kolor'|| i =='kola'){
+        if(this.i == 'nazwa' || this.i =='kolor'|| this.i =='kola'){
         document.write(this[i]);
     }
 }

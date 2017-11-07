@@ -7,6 +7,32 @@
 
     </head>
     <body>
-           <script src="obiekty.js"></script>
+        <input type="text" id="pole1">
+
+
+        <input type="text" id="pole2">
+        <div id="wynik"></div>
+        <button id="przycisk">przycisk</button>
+
+
+        <script >
+            var elPole1 = document.getElementById("pole1");
+            var elPole2 = document.getElementById("pole2");
+            var elWynik = document.getElementById("wynik");
+            var elPrzycisk = document.getElementById("przycisk");
+
+
+
+            function dodawanie(){
+                var hehe =  Number(elPole1.value) + Number(elPole2.value);
+                elWynik.textContent = hehe;
+
+            }
+            elPrzycisk.addEventListener('click',dodawanie);
+
+
+
+
+        </script>
     </body>
 </html>

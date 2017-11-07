@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
     $('#tabela1 tr:even').css('background','#b20000');
-    $('#tabela1 tr:odd').css('background','#b2b2b2');
+/*    $('#tabela1 tr:odd').css('background','#b2b2b2');
     $('#tabela1 tr:first').css('background','#5ad45f');
     $('#tabela1 tr:last').css('background','#5ad45f');
     $('#tabela1 tr:eq(3)').css('color','white');
@@ -15,7 +15,7 @@ $(document).ready(function(){
     })
     $('#niewidoczny').click(function(){
         $('#obraz').hide(1500);
-    })
+    })*/
 
 
 });
