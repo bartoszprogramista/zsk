@@ -1,0 +1,3 @@
+zapytanie 1: SELECT id, imie, nazwisko from pacjenci;
+zapytanie 2: SELECT imie, nazwisko, choroby_przewlekle,uczulenia from pacjenci WHERE id =1;
+zapytanie 3: SELECT imie, nazwisko from pacjenci where uczulenia Like 'brak';
